@@ -1,0 +1,16 @@
+/* Header styles */
+.header {
+    font-size: 20px;
+    text-align:center
+}
+
+/* Body styles */
+.body {
+    font-size:20px;
+    margin:40px;
+    padding:20px;
+}
+/* Footer styles */
+.footer {
+    font-size:20px;
+}
