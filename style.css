@@ -12,16 +12,14 @@
 }
 /* Footer styles */
 .footer {
+    display: flex;
     font-size:20px;
-    position: absolute;
-    bottom: 0;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 /* Table */
 table {
     border: 3px solid black;
-    position: fixed;
-    left: 500px;
-    top: 200px;
 }
 
 th {
@@ -36,13 +34,23 @@ td {
     border: 2px solid black;
 }
 
-video {
-    position: fixed;
-    top: 170px;
-    right: 300px;
-}
-
 /* Background Image */
 body {
-    background-image: url('Mugblur.png');
+    background-image: url('images/Mugblur.png');
+}
+/* Flex Box */
+.container {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.item-1 {
+    flex: .75;
+    
+}
+
+.item-2 {
+    flex: 1;
 }
