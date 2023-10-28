@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Form</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Form</h1>
+        </div>
+        <div class="navbar">
+            <table>
+                <tr>
+                    <td><a href="index.html">Homepage</a></td>
+                    <td><a href="rbgospel.html">Gospel</a></td>
+                    <td><a href="autobio.html">About</a></td>
+                </tr>
+            </table>
+        </div>
+        <div class="body" id="selfassess">
+            
+            <p class="questions">What's your favorite time of day to get stuff done?</p>
+            <form>
+                <label for="D_Option">Day</label>
+                <input type="radio" id="D_Option" name="timeofday">
+
+                <label for="N_Option">Night</label>
+                <input type="radio" id="N_Option" name="timeofday">
+            </form>
+
+            <p class="questions">What was your go-to childhood password?</p>
+            <form>
+                <label for="F_pass">Password</label>
+                <input type="text" id="F_Pass">
+            </form>
+
+            <p class="questions">Your Favorite Color?</p>
+            <label for="F_color">Color</label>
+            <input type="color" id="F_color">
+
+            <p class="questions">How would you rate this form so far?</p>
+            <label for="R_range">Range</label>
+            <input type="range" id="R_range">
+
+            <p class="questions">When is your next birthday?</p>
+            <label for="B_date">Birthday</label>
+            <input type="date" id="B_date">
+
+            <p id="confirmation">Confirm you accept the <a href="https://www.amazon.com/Wooden-Blocks-Stacking-Tumbling-Exclusive/dp/B000GBA60W/ref=sr_1_1_sspa?crid=25T565LR3KO5R&keywords=jenga&qid=1698512585&sprefix=jeng%2Caps%2C161&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">terms and conditions</a> of this form</p>
+            <label for="terms">I accept</label>
+            <input type="checkbox" id="terms">
+            
+            <p></p>
+            <label for="Submit">Submit this form for grading:</label>
+            <input type="submit" value="Submit">
+        </div>
+        <div class="footer">
+            <h3 style="color: grey;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, veritatis nulla numquam reiciendis error minus sapiente labore corporis pariatur voluptate ipsam velit inventore dolores suscipit. Vero nam dolor cumque dolore.
+            </h3>
+        </div>
+    </body>
+</html>
