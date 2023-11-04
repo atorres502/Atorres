@@ -123,12 +123,16 @@ body {
 }
 
 /* Pseudo Clases */
-#termsandcond:hover {
-    color:blueviolet;
+a:visited {
+    color: rgb(255, 0, 0);
 }
 
-#termsandcond:active {
-    border: 2px solid blueviolet;
+a:hover {
+    color:rgb(255, 255, 255);
+}
+
+a:active {
+    border: 2px solid rgb(255, 255, 255);
 }
 
 input:focus {
