@@ -26,6 +26,8 @@
 .footer {
     display:flex;
     justify-content:end;
+    position:relative;
+    bottom: 0;
     border-radius: 25px 25px 0 0;
     border: 10px rgb(170, 137, 45);
     background: linear-gradient(rgb(138, 94, 13),rgb(212, 141, 7));
@@ -118,4 +120,72 @@ body {
 
 #confirmation {
     font-size: 18pt;
+}
+
+/* Pseudo Clases */
+#termsandcond:hover {
+    color:blueviolet;
+}
+
+#termsandcond:active {
+    border: 2px solid blueviolet;
+}
+
+input:focus {
+    border: 3px solid rgb(255, 0, 0);
+}
+
+/* Mock Video */
+.fakevideo {
+    display: flex;
+    flex-direction:column;
+    position: relative;
+    left: 25%;
+    right: 25%;
+}
+
+#mockborder {
+    height: 700px;
+    width: 1000px;
+    border: 6px solid rgb(30, 30, 30);
+    background-image: url(images/airplane.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    margin-top:30px;
+}
+
+#progressbar {
+    height: 7px;
+    width: 1000px;
+    border: 6px solid rgb(30, 30, 30);
+    background: linear-gradient(90deg, red,grey);
+}
+
+#mediaplayer {
+    height:70px;
+    width:1000px;
+    border: 6px solid rgb(30, 30, 30);
+    background-color: rgb(30, 30, 30);
+    margin-bottom: 50px;
+}
+
+#circle {
+    position: relative;
+    top: 40%;
+    left: 47%;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: grey;
+}
+
+#triangle {
+    position:relative;
+    top:25%;
+    left: 40%;
+    height: 0;
+    width: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid rgb(0, 0, 0);
 }
