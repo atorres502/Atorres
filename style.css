@@ -22,6 +22,40 @@
     flex-wrap: wrap;
     font-size: 25px;
 }
+
+/*Nav animation */
+@keyframes navhighlight {
+    0% {
+        color: blue;
+    }
+    12.5% {
+        color: indigo;
+    }
+    25% {
+        color: violet;
+    }
+    37.5% {
+        color: red;
+    }
+    50% {
+        color: orangered;
+    }
+    62.5% {
+        color: orange;
+    }
+    75% {
+        color: yellow;
+    }
+    87.5% {
+        color: green;
+    }
+    100% {
+        color: blue;
+    }
+}
+.nav:hover {
+    animation: navhighlight 5s ease-in infinite;
+}
 /* Footer styles */
 .footer {
     display:flex;
@@ -56,8 +90,11 @@ td {
 body {
     background-image: url('images/Mugblur.png');
     background-repeat: no-repeat;
-    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
+    background-position: center;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
 }
@@ -69,8 +106,10 @@ body {
 /* Flex Box */
 .container {
     display: flex;
-    flex-direction: row; 
-    align-items: flex-start;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
 }
 
 .item-1 {
@@ -143,14 +182,14 @@ input:focus {
 .fakevideo {
     display: flex;
     flex-direction:column;
+    align-items: center;
     position: relative;
-    left: 25%;
-    right: 25%;
+    padding: 50px;
 }
 
 #mockborder {
-    height: 700px;
-    width: 1000px;
+    height: 400px;
+    width: 600px;
     border: 6px solid rgb(30, 30, 30);
     background-image: url(images/airplane.jpg);
     background-repeat:no-repeat;
@@ -160,27 +199,43 @@ input:focus {
 
 #progressbar {
     height: 7px;
-    width: 1000px;
+    width: 600px;
     border: 6px solid rgb(30, 30, 30);
-    background: linear-gradient(90deg, red,grey);
+    background: linear-gradient(90deg, red,rgb(255, 255, 255));
 }
 
 #mediaplayer {
     height:70px;
-    width:1000px;
+    width:600px;
     border: 6px solid rgb(30, 30, 30);
     background-color: rgb(30, 30, 30);
     margin-bottom: 50px;
 }
 
+/* Animation */
+@keyframes bounce {
+    0% {
+        top: 100px;
+        width: 80px;
+        height: 80px;
+    }
+    100% {
+        width: 90px;
+        height: 70px;
+        top: 200px;
+    }
+}
+
 #circle {
     position: relative;
     top: 40%;
-    left: 47%;
+    left: 40%;
     height: 80px;
     width: 80px;
     border-radius: 50%;
     background-color: grey;
+    /* animation */
+    animation: bounce 1s ease-in alternate infinite;
 }
 
 #triangle {
@@ -192,4 +247,37 @@ input:focus {
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
     border-left: 20px solid rgb(0, 0, 0);
+    /* transition */
+    transition: border-top 2s, border-bottom 2s, border-left 2s;
+}
+
+#triangle:hover {
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid rgb(0,0,0);
+}
+
+/* Extra transitions */
+#termsandcond {
+    color: blue;
+    transition: 3s;
+}
+#termsandcond:hover {
+    color: violet;
+}
+
+/* Extra animation on form page */
+@keyframes sub {
+    0% {
+        top: 10px;
+        width: 50px;
+    }
+    100% {
+        top: 100px;
+        width: 100px
+    }
+}
+
+#Submit:hover {
+    animation: sub 2s linear alternate infinite;
 }
